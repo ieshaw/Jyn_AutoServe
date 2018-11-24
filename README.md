@@ -35,12 +35,12 @@ You may use existing 3rd party projects for inspiration / example. However, we w
 - Do not re-write the git protocol.
 - Docker is acceptable as a containerization protocol
 - Docker Container of Python acceptable to use
-- TODO: want project in home directory of server
+
 
 ## Pre-Required Software Installs
 
-- Docker (if no Docker, assumes Ubuntu and installs Docker)
-- Nginx (if no Nginx, assumes Ubuntu and installs nginx)
+- Docker (if no Docker, `./install.sh` assumes Ubuntu and installs Docker)
+- OpenSSL
 
 ## Helpful Links
 
@@ -50,6 +50,8 @@ You may use existing 3rd party projects for inspiration / example. However, we w
 
 [For Setting up SSL](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04)
 
+[For Setting up Nginx Reverse-Proxy Conatiner with Self-Signed Cert](https://medium.com/@oliver.zampieri/self-signed-ssl-reverse-proxy-with-docker-dbfc78c05b41)
+
 ## Final Note
 
-This process could be easily be done by simply installing Docker and using the [Gitlab image](https://hub.docker.com/r/gitlab/gitlab-ce/); but I recognize that defeats the purpose of this exercise.
+This process could be easily be done by simply installing Docker and using the [Gitlab image](https://hub.docker.com/r/gitlab/gitlab-ce/) with runners; but I recognize that defeats the purpose of this exercise.

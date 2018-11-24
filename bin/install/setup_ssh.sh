@@ -6,13 +6,13 @@ cred_file=~/creds.txt
 
 echo "This part is to help setup the ssh connection"
 
-echo "What is your username on this server?"
+echo "What is your username on the server?"
 read username
 
 echo "Where on this computer is your key for that server?"
 read key_loc
 
-echo "What is the hostname?"
+echo "What is the server hostname?"
 read hostname
 
 #Do SSH check to ensure valid
