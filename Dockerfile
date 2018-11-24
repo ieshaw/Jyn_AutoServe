@@ -7,7 +7,7 @@ FROM python:3.5-slim
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY ./bin/install/docker_files /app
+COPY /bin/install/docker_files /app
 # Copy the admin directory contents into the container at /app
 COPY /admin /app
 

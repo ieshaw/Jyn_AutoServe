@@ -27,7 +27,7 @@ while read -r line; do
     ((counter++))
 done < "$cred_file"
 
-file_path=/Users/ianshaw/Downloads/Spectre_Code/Jyn_AutoServe/.
+file_path=/Users/ianshaw/Downloads/Spectre_Code/Jyn_AutoServe/
 
 #scp the folder
 scp -r -i $key_loc $file_path $username@$hostname:$path_on_server

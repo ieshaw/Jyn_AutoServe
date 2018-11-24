@@ -34,12 +34,13 @@ You may use existing 3rd party projects for inspiration / example. However, we w
 
 - Do not re-write the git protocol.
 - Docker is acceptable as a containerization protocol
-- Docker Container of Ubuntu acceptable to use
+- Docker Container of Python acceptable to use
 - TODO: want project in home directory of server
 
 ## Pre-Required Software Installs
 
-Docker (if no Docker, assumes Ubuntu and installs Docker)
+- Docker (if no Docker, assumes Ubuntu and installs Docker)
+- Nginx (if no Nginx, assumes Ubuntu and installs nginx)
 
 ## Helpful Links
 

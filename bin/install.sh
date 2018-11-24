@@ -1,8 +1,9 @@
 #!/bin/bash
 
+echo "Make sure you run this from bin/"
+
 ./install/setup_ssh.sh
 ./install/scp_project.sh
 ./install/enter_server.sh << EOF
-    bin/install/docker_install.sh
-    sudo docker build -t jyntech bin/install/docker_files/.
+    Jyn_AutoServe/bin/install/docker_install.sh
 EOF

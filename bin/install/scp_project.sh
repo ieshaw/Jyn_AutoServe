@@ -28,7 +28,7 @@ while read -r line; do
 done < "$cred_file"
 
 echo "What is the home directory of this project?"
-echo "Make sure it looks like /path/to/project/."
+echo "Make sure it looks like /path/to/project/"
 read file_path
 
 #scp the folder
