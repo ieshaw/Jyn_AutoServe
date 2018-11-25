@@ -62,7 +62,13 @@ For user, whent with `jyn_admin` instead of `admin` since my development environ
 
 ## ScreenShots
 
+On Install and start
 
+![start](start.png)
+
+
+
+![end](end.png)
 
 ## If I Had More Time
 
