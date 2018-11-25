@@ -37,9 +37,11 @@ done < "$cred_file"
 #scp -r -i $key_loc $PWD $username@$hostname:$path_on_server
 #TODO: Decide to keep path_on_server
 #scp -r -i $key_loc $PWD $username@$hostname:.
+cd ../..
 ssh-agent bash -c 'ssh-add $key_loc; git clone $username@$hostname:admin/'
+cd admin/
 #GIT_SSH_COMMAND='ssh -i ~/.ssh/nva.pem' git clone $username@$hostname:admin/
-echo "Hello Jyn!" > hello.txt
+echo "Hello Jyn" > hello.txt
 git add .
 git commit -m "Second Commit"
 ssh-agent bash -c 'ssh-add $key_loc; git push origin master'

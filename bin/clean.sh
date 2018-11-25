@@ -1,6 +1,8 @@
 #!/bin/bash
 
 rm ~/creds.txt
-rm ~/.ssh/jyn_admin
-rm ~/.ssh/jyn_admin.pub
-rm -rf  ../admin/.git
+rm -rf  ../../admin/
+./install/enter_server.sh << EOF
+    rm -rf admin/
+    rm -rf Jyn_AutoServe/
+EOF

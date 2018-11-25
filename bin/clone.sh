@@ -25,18 +25,4 @@ while read -r line; do
     ((counter++))
 done < "$cred_file"
 
-echo "What is your commit message?"
-read message
-
-../Jyn_AutoServe/bin/install/enter_server.sh << EOF
-    rm -rf admin/
-EOF
-scp -r -i $key_loc $PWD $username@$hostname:admin/
-../Jyn_AutoServe/bin/install/enter_server.sh << EOF
-    cd admin/
-    git add .
-    git commit -m "$message"
-EOF
-
-../Jyn_AutoServe/bin/stop.sh
-../Jyn_AutoServe/bin/start.sh
+scp -r -i $key_loc $username@$hostname:admin/ ./
