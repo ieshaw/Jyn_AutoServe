@@ -25,4 +25,4 @@ while read -r line; do
     ((counter++))
 done < "$cred_file"
 
-scp -r -i $key_loc $username@$hostname:admin/ ./
+scp -r -i $key_loc $username@$hostname:Jyn_AutoServe/admin/ ./

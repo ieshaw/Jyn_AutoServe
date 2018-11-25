@@ -42,7 +42,7 @@ You may use existing 3rd party projects for inspiration / example. However, we w
 - Docker on server(if not installed, `./install.sh` assumes Ubuntu and installs Docker)
 - OpenSSL on server and local
 - Git on server and local (if not installed, `./install.sh` assumes Ubuntu and installs Docker)
-- Expect Protocol on local (helps with automation, can do without)
+- `Expect` protocol on local (helps with automation, can do without)
 
 ## Note to Jyn Team
 
@@ -60,6 +60,15 @@ For user, whent with `jyn_admin` instead of `admin` since my development environ
 
 [For Setting up Nginx Reverse-Proxy Conatiner with Self-Signed Cert](https://medium.com/@oliver.zampieri/self-signed-ssl-reverse-proxy-with-docker-dbfc78c05b41)
 
+## ScreenShots
+
+
+
+## If I Had More Time
+
+Would have setup the git server in a Ubuntu Docker Image and serve the git over SSL Using [these instructions](https://git-scm.com/book/en/v2/Git-on-the-Server-Smart-HTTP).
+
 ## Final Note
 
-This process could be easily be done by simply installing Docker and using the [Gitlab image](https://hub.docker.com/r/gitlab/gitlab-ce/) with runners; but I recognize that defeats the purpose of this exercise.
+This process could be easily be done by simply installing Docker and using the [Gitlab image](https://hub.docker.com/r/gitlab/gitlab-ce/) with runners; but I recognize that defeats the purpose of this exercise. IBM Provides a step-by-step [tutorial](https://developer.ibm.com/code/2017/07/13/step-step-guide-running-gitlab-ce-docker/) on this solution.
+

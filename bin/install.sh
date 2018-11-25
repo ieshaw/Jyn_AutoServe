@@ -6,10 +6,12 @@ echo "Make sure you run this from bin/"
 ./install/scp_project.sh
 ./install/enter_server.sh << EOF
     Jyn_AutoServe/bin/install/docker_install.sh
+    cd Jyn_AutoServe/
+    rm -rf admin
     mkdir admin
     cd admin
     git init 
-    cp ../Jyn_AutoServe/bin/install/ps.sh .
+    cp ../bin/install/ps.sh .
     git add .
     git commit -m "Initial Commit"
 EOF
