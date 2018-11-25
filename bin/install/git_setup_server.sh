@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#This file scp's a file to the server
-
-cred_file=~/creds.txt
-path_on_server=/home/ubuntu
-counter=0
-
 cred_file=~/creds.txt
 counter=0
 
@@ -27,7 +21,4 @@ while read -r line; do
     ((counter++))
 done < "$cred_file"
 
-file_path=/Users/ianshaw/Downloads/Spectre_Code/Jyn_AutoServe/
-
-#scp the folder
-scp -r -i $key_loc $file_path $username@$hostname:$path_on_server
+cat ~/.ssh/jyn_admin.pub | ssh -q -i $key_loc $username@$hostname "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"

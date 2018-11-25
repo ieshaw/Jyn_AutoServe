@@ -39,12 +39,20 @@ You may use existing 3rd party projects for inspiration / example. However, we w
 
 ## Pre-Required Software Installs
 
-- Docker (if no Docker, `./install.sh` assumes Ubuntu and installs Docker)
-- OpenSSL
+- Docker on server(if not installed, `./install.sh` assumes Ubuntu and installs Docker)
+- OpenSSL on server and local
+- Git on server and local (if not installed, `./install.sh` assumes Ubuntu and installs Docker)
+- Expect Protocol on local (helps with automation, can do without)
+
+## Note to Jyn Team
+
+For user, whent with `jyn_admin` instead of `admin` since my development environment is on AWS and that user group is already taken.
 
 ## Helpful Links
 
 [For Setting Up Git and GitLab](https://www.linux.com/learn/how-run-your-own-git-server)
+
+[For Setting up Git](https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server)
 
 [For Setting up Docker](https://docs.docker.com/get-started/)
 

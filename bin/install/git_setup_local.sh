@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#This file scp's a file to the server
-
-cred_file=~/creds.txt
-path_on_server=/home/ubuntu
-counter=0
-
 cred_file=~/creds.txt
 counter=0
 
@@ -27,17 +21,9 @@ while read -r line; do
     ((counter++))
 done < "$cred_file"
 
-echo "What file/folder do you want on the server?"
-read file_path
-
-echo "Is this a folder, Y/N?"
-read folder
-
-if [ "$folder"=="Y" ];
-then
-    #scp the folder
-    scp -r -i $key_loc $file_path $username@$hostname:$path_on_server
-else
-    #scp the file
-    scp -i $key_loc $file_path $username@$hostname:$path_on_server
-fi
+cd ../admin
+git init
+git add .
+git commit -m 'initial commit'
+git remote add origin ssh $key_loc jyn_admin@$hostname 
+git push origin master
