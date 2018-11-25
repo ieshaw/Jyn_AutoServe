@@ -9,13 +9,13 @@ then
     then
         echo "docker existing"
     else
-        echo "install docker"
+        echo "installing docker"
         sudo snap install docker
         sudo groupadd docker
         sudo usermod -aG docker ubuntu
     fi
 else
-    echo "install docker" >&2
+    echo "installing docker"
     sudo snap install docker
     sudo groupadd docker
     sudo usermod -aG docker ubuntu
